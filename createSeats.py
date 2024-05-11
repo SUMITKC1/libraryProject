@@ -18,7 +18,6 @@ class createLayout:
                 seats.append((columb+1,row+1))
         return seats
 
-        
 
 
   
