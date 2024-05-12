@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bd9476a-860a-4968-be41-2a3bbd1e2893" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/startLibrary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/createSeats.py" beforeDir="false" afterPath="$PROJECT_DIR$/createSeats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/startLibrary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,7 @@
   "keyToString": {
     "Python.createDatabaseOfStudent.executor": "Run",
     "Python.createSeats.executor": "Run",
+    "Python.startLibrary.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
