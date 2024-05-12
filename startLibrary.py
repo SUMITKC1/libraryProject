@@ -1,16 +1,22 @@
-from createSeats import * 
-
+from createSeats import createLayout 
+from createDatabaseOfStudent import DataBase
 class startLibrary :
     def __init__(self, libraryLayout):
         self.libraryLayout = libraryLayout
         self.seatsPerRoom = {}
         self.initialCase()
+        self.getData = DataBase()
+
     
     def initialCase(self):
         for room, seatsInRoom in self.libraryLayout.items():
             self.seatsPerRoom[room] = {seat : [0, 0] for seat in seatsInRoom} #0 means its a empty seat
     
     def occupySeat(self, roomNumber, seatNumber, rollNumber):
+        if (self.getData.doesRecordExists(rollNumber) == False):
+            print("This record not found.")
+            return
+        
         if self.seatsPerRoom[roomNumber][seatNumber][0] == 0:
             self.seatsPerRoom[roomNumber][seatNumber] = [1, rollNumber]
         else:
@@ -47,8 +53,9 @@ library.createSeats(2)
 libraryUsing = startLibrary(library.seats)
 
 libraryUsing.occupySeat(1,2,"221ME358")
-libraryUsing.tempLeaveSeat(1,2,"221ME358")
-print(libraryUsing.showEmptySeatsInLibrary())
+libraryUsing.occupySeat(1,3,"221ME346")
+libraryUsing.leaveSeat(1,3,"221ME346")
+print(libraryUsing.seatsPerRoom)
 
 
 
